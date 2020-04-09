@@ -21,30 +21,22 @@
             <img src="img/google_image.png" alt="google icon">
             </div>
         </div>
-
-        <!-- search bar -->
-        
         <div class="section"> 
             <div class="search">
-
             <div>
                 <img class="search-sym" src="img/desktop_searchbox_sprites302_hr.png" alt="search icon">
             </div>
-
             <div>
             <input class="search-bar" type="text" name="search" id="search">
-            </div> 
-            
+            </div>  
             <div>
             <img class="search-voice" src="img/voice icon.jpg" alt="voice icon">
             </div>
         </div>
-
         <p class="link"> 
             <a class="link-g" href="#">Google Search</a>
             <a class="link-f" href="#">I'm Feeling Lucky</a>
         </p>
-
         <p class="languages">
                 Google offered in:
                 <a href="#">Hausa</a>
