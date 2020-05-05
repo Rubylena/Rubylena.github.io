@@ -40,7 +40,7 @@ const questions = [
         ]
     },
     {
-        question: "Charles Dickens is the Author of an amazing gistorical novel called?",
+        question: "Charles Dickens is the Author of an amazing historical novel called?",
         answers: [
             {text: "The Scarlet Letter", correct: false},
             {text: "The Great Gatsby", correct: false},
