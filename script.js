@@ -40,7 +40,7 @@ const questions = [
         ]
     },
     {
-        question: "Charles Dickens is the Author of an amazing historical novel called?",
+        question: "Charles Dickens is the Author of an amazing gistorical novel called?",
         answers: [
             {text: "The Scarlet Letter", correct: false},
             {text: "The Great Gatsby", correct: false},
@@ -112,14 +112,20 @@ function resetState() {
     }
 }
 
-// when answer button clicked, and next button clicked there is a loop until the end of the 5 questions before the game then finishes, it does not start all over again.
 function selectAnswer(element) {
     let selectedButton = element.target;
     const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct);
+
+    // when the buttons are click the color-code status will be assign to each button
+    // when the button has been clicked it cannot be clicked again
     Array.from(answerColumn.children).forEach(button => { 
         setStatusClass(button, button.dataset.correct);
+        button.disabled = true;
     });
+    // when answer button clicked, and next button clicked there is a loop 
+    // until the end of the 5 questions before the game then finishes, it does not start all over again.
+
     if (shuffledQuestion.length > currentQuestionIndex + 1) {
         nextButton.classList.remove("hide");
         instruct.classList.add("hide");
