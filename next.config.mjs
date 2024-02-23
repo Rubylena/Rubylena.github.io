@@ -4,7 +4,8 @@ import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: 'export',
+  reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
