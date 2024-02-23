@@ -55,7 +55,7 @@ export default function About() {
     <Container className="mt-16 sm:mt-28">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-3 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 lg:max-w-none">
+          <div className="max-w-xs px-2.5 m-auto lg:max-w-none">
             <Image
               src={portraitImage}
               alt=""
