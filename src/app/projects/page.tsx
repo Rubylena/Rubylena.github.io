@@ -8,6 +8,8 @@ import logoTrust from '@/images/logos/favicon.ico'
 import logoIntercity from '@/images/logos/intercity.ico'
 import logoShop from '@/images/logos/shopEasy.png'
 import logoT40 from '@/images/logos/t40.ico'
+import logoLoad from '@/images/logos/load-logo.svg'
+import logoMovie from '@/images/logos/movie-logo.png'
 
 const projects = [
   {
@@ -16,7 +18,8 @@ const projects = [
       'Innovative and reliable financial application for public servants and private organizations.',
     link: { href: 'https://akopesamcredit.com/', label: 'akopesam.com' },
     logo: logoAk,
-    language: 'React',
+    language: 'TypeScript',
+    library: 'React',
   },
   {
     name: 'TrustBanc MFB',
@@ -24,7 +27,8 @@ const projects = [
       'Website containing information about TrustBanc MicroFinance services.',
     link: { href: 'https://trustbancmfb.com/', label: 'trustbancmfb.com' },
     logo: logoTrust,
-    language: 'React',
+    language: 'TypeScript',
+    library: 'React',
   },
   {
     name: 'Intercity Operator Portal',
@@ -35,7 +39,8 @@ const projects = [
       label: 'operator.intercity.ng',
     },
     logo: logoIntercity,
-    language: 'React',
+    language: 'TypeScript',
+    library: 'React',
   },
   {
     name: 'TrustBanc Capital',
@@ -46,7 +51,8 @@ const projects = [
       label: 'trustbanccapital.com',
     },
     logo: logoTrust,
-    language: 'React',
+    language: 'TypeScript',
+    library: 'React',
   },
   {
     name: 'IntercityNG',
@@ -58,7 +64,8 @@ const projects = [
       label: 'intercity.ng',
     },
     logo: logoIntercity,
-    language: 'NextJs',
+    language: 'TypeScript',
+    library: 'NextJs',
   },
   {
     name: 'T40',
@@ -69,7 +76,8 @@ const projects = [
       label: 'myt40.com',
     },
     logo: logoT40,
-    language: 'NextJs',
+    language: 'TypeScript',
+    library: 'NextJs',
   },
   {
     name: 'Shop Easy',
@@ -81,7 +89,34 @@ const projects = [
       label: 'shop-easy.live',
     },
     logo: logoShop,
-    language: 'React',
+    language: 'JavaScript',
+    library: 'React',
+  },
+  {
+    name: 'Load Connect',
+    description:
+      'Load connect provides load delivery solutions with affordable web and mobile app platforms.',
+
+    link: {
+      href: 'https://loading-conect.netlify.app/',
+      label: 'loading-connect',
+    },
+    logo: logoLoad,
+    language: 'JavaScript',
+    library: 'React',
+  },
+  {
+    name: 'Movie App',
+    description:
+      'Simple movie application implemented with vanilla JS with minimally HTML.',
+
+    link: {
+      href: 'https://potent-movie-app.netlify.app/',
+      label: 'movie app',
+    },
+    logo: logoMovie,
+    language: 'JavaScript',
+    library: 'React',
   },
 ]
 
@@ -128,7 +163,10 @@ export default function Projects() {
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <span>Framework/Library: {project.language}</span>
+              <span>Framework/Library: {project.library}</span>
+            </p>
+            <p className="relative z-10 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+              <span>Language: {project.language}</span>
             </p>
             <Card.Cta>
               <LinkIcon className="h-6 w-6 flex-none" />

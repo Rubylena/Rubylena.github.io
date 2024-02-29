@@ -10,7 +10,7 @@ import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
 import logoDev from '@/images/logos/dev.png'
 import logoAbacus from '@/images/logos/abacus.png'
 import logoTrust from '@/images/logos/favicon.ico'
-import logoSide from '@/images/logos/side-hustle-logo.svg'
+import logoT40 from '@/images/logos/t40.ico'
 import image1 from '@/images/photos/Image-1.jpg'
 import image2 from '@/images/photos/Image-2.jpg'
 import image3 from '@/images/photos/Image-3.jpg'
@@ -228,10 +228,17 @@ function Resume() {
       },
     },
     {
+      company: 'T40',
+      title: 'Frontend Engineer',
+      logo: logoT40,
+      start: '2022',
+      end: '2022',
+    },
+    {
       company: 'DevCareer',
       title: 'Frontend Developer',
       logo: logoDev,
-      start: '2022',
+      start: '2021',
       end: '2022',
     },
     {
@@ -239,15 +246,9 @@ function Resume() {
       title: 'Frontend Developer',
       logo: logoAbacus,
       start: '2020',
-      end: '2022',
+      end: '2021',
     },
-    {
-      company: 'Sidehustle',
-      title: 'Frontend Developer intern',
-      logo: logoSide,
-      start: '2020',
-      end: '2020',
-    },
+    
   ]
 
   return (
