@@ -122,7 +122,7 @@ const projects = [
       'An E-commerce App that directs users to multiple stores where they can find a particular product.',
 
     link: {
-      href: 'https://shop-easy.netlify.app/',
+      href: 'https://shop-easyy.netlify.app/',
       label: 'shop-easy',
     },
     logo: logoShop,
