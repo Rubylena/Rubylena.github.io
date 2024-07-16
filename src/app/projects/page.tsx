@@ -10,6 +10,7 @@ import logoShop from '@/images/logos/shopEasy.png'
 import logoT40 from '@/images/logos/t40.ico'
 import logoLoad from '@/images/logos/load-logo.svg'
 import logoMovie from '@/images/logos/movie-logo.png'
+import logoFootprint from '@/images/logos/footprint.png'
 
 const projects = [
   {
@@ -31,16 +32,17 @@ const projects = [
     library: 'React',
   },
   {
-    name: 'Intercity Operator Portal',
+    name: 'IntercityNG',
     description:
-      'Portal for intercity operators to manage all bookings and parcels.',
+      'Search and Compare Interstate Bus Tickets and Send Parcels In Nigeria.',
+
     link: {
-      href: 'https://operator.intercity.ng',
-      label: 'operator.intercity.ng',
+      href: 'https://intercity.ng/',
+      label: 'intercity.ng',
     },
     logo: logoIntercity,
     language: 'TypeScript',
-    library: 'React',
+    library: 'NextJs',
   },
   {
     name: 'TrustBanc Capital',
@@ -55,17 +57,28 @@ const projects = [
     library: 'React',
   },
   {
-    name: 'IntercityNG',
+    name: 'FootPrint Mentorship',
     description:
-      'Search and Compare Interstate Bus Tickets and Send Parcels In Nigeria.',
-
+      'Platform designed to enhance interview skills, job readiness, confidence, and network.',
     link: {
-      href: 'https://intercity.ng/',
-      label: 'intercity.ng',
+      href: 'https://footprinthq.com/',
+      label: 'footprinthq.com',
     },
-    logo: logoIntercity,
+    logo: logoFootprint,
     language: 'TypeScript',
-    library: 'NextJs',
+    library: 'React',
+  },
+  {
+    name: 'TrustBanc Asset',
+    description:
+      'TrustBanc portfolio management website.',
+    link: {
+      href: 'https://trustbancasset.com/',
+      label: 'trustbancasset.com',
+    },
+    logo: logoTrust,
+    language: 'TypeScript',
+    library: 'React',
   },
   {
     name: 'T40',
@@ -80,13 +93,37 @@ const projects = [
     library: 'NextJs',
   },
   {
+    name: 'TrustBanc WeFinance',
+    description: 'Loan application website for WeFinance, a subsidiary of TrustBanc.',
+
+    link: {
+      href: 'https://wefinanceng.com/',
+      label: 'wefinanceng.com',
+    },
+    logo: logoTrust,
+    language: 'TypeScript',
+    library: 'React',
+  },
+  {
+    name: 'Intercity Operator Portal',
+    description:
+      'Portal for intercity operators to manage all bookings and parcels.',
+    link: {
+      href: 'https://operator.intercity.ng',
+      label: 'operator.intercity.ng',
+    },
+    logo: logoIntercity,
+    language: 'TypeScript',
+    library: 'React',
+  },
+  {
     name: 'Shop Easy',
     description:
       'An E-commerce App that directs users to multiple stores where they can find a particular product.',
 
     link: {
-      href: 'https://shop-easy.live/',
-      label: 'shop-easy.live',
+      href: 'https://shop-easy.netlify.app/',
+      label: 'shop-easy',
     },
     logo: logoShop,
     language: 'JavaScript',
