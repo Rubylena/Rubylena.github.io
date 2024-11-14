@@ -8,9 +8,10 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
 import logoDev from '@/images/logos/dev.png'
-import logoAbacus from '@/images/logos/abacus.png'
+import logoLotus from '@/images/logos/Lotus.png'
 import logoTrust from '@/images/logos/favicon.ico'
 import logoT40 from '@/images/logos/t40.ico'
+import logoVertex from '@/images/logos/Vertex.svg'
 import image1 from '@/images/photos/Image-1.jpg'
 import image2 from '@/images/photos/Image-2.jpg'
 import image3 from '@/images/photos/Image-3.jpg'
@@ -189,7 +190,7 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-white dark:ring-0">
         <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -218,37 +219,36 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'TrustBanc',
-      title: 'Software Developer',
-      logo: logoTrust,
-      start: '2023',
+      company: 'Lotus bank',
+      title: 'Frontend Software Developer',
+      logo: logoLotus,
+      start: 'Aug 2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
+      company: 'TrustBanc',
+      title: 'Software Developer',
+      logo: logoTrust,
+      start: 'Jan 2023',
+      end: 'July 2024',
+    },
+    {
+      company: 'Vertex',
+      title: 'Frontend Developer',
+      logo: logoVertex,
+      start: 'Dec 2021',
+      end: 'Dec 2022',
+    },
+    {
       company: 'T40',
       title: 'Frontend Engineer',
       logo: logoT40,
-      start: '2022',
-      end: '2022',
+      start: 'Nov 2020',
+      end: 'Nov 2021',
     },
-    {
-      company: 'DevCareer',
-      title: 'Frontend Developer',
-      logo: logoDev,
-      start: '2021',
-      end: '2022',
-    },
-    {
-      company: 'Abacus Africa',
-      title: 'Frontend Developer',
-      logo: logoAbacus,
-      start: '2020',
-      end: '2021',
-    },
-    
   ]
 
   return (

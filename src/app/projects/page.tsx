@@ -17,7 +17,8 @@ const projects = [
     name: 'Akopesam',
     description:
       'Innovative and reliable financial application for public servants and private organizations.',
-    link: { href: 'https://akopesamcredit.com/', label: 'akopesam.com' },
+    link: { href: 'https://akopesamcredit.netlify.app', label: 'akopesam.com' },
+    // link: { href: 'https://akopesamcredit.com/', label: 'akopesam.com' },
     logo: logoAk,
     language: 'TypeScript',
     library: 'React',
@@ -70,8 +71,7 @@ const projects = [
   },
   {
     name: 'TrustBanc Asset',
-    description:
-      'TrustBanc portfolio management website.',
+    description: 'TrustBanc portfolio management website.',
     link: {
       href: 'https://trustbancasset.com/',
       label: 'trustbancasset.com',
@@ -94,7 +94,8 @@ const projects = [
   },
   {
     name: 'TrustBanc WeFinance',
-    description: 'Loan application website for WeFinance, a subsidiary of TrustBanc.',
+    description:
+      'Loan application website for WeFinance, a subsidiary of TrustBanc.',
 
     link: {
       href: 'https://wefinanceng.com/',

@@ -55,7 +55,7 @@ export default function About() {
     <Container className="mt-16 sm:mt-28">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-3 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 m-auto lg:max-w-none">
+          <div className="m-auto max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
               alt=""
@@ -64,7 +64,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="lg:order-first lg:row-span-2 lg:col-span-2">
+        <div className="lg:order-first lg:col-span-2 lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             I’m Grace Effiong. I build interactive and user-friendly
             applications.
@@ -84,9 +84,9 @@ export default function About() {
             <p>
               I hold a degree in Software Engineering from ALX, complemented by
               a Masters in Public Health from the University of Calabar. My
-              continuous learning journey includes certifications in React,
-              CompTIA Security+, and participation in the React learning program
-              by Andela (Meta and PluralSight).
+              continuous learning journey includes certifications in AWS (Cloud
+              practitioner), CompTIA Security+, and participation in the
+              React learning program by Andela (Meta and PluralSight).
             </p>
             <p>
               Outside of my professional endeavors, I find joy in giving back.
