@@ -246,7 +246,7 @@ function Resume() {
       company: 'T40',
       title: 'Frontend Engineer',
       logo: logoT40,
-      start: 'Nov 2020',
+      start: 'Nov 2019',
       end: 'Nov 2021',
     },
   ]
