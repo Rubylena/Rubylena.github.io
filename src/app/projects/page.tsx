@@ -17,8 +17,7 @@ const projects = [
     name: 'Akopesam',
     description:
       'Innovative and reliable financial application for public servants and private organizations.',
-    link: { href: 'https://akopesamcredit.netlify.app', label: 'akopesam.com' },
-    // link: { href: 'https://akopesamcredit.com/', label: 'akopesam.com' },
+    link: { href: 'https://akopesamcredits.com/', label: 'akopesamcredits.com' },
     logo: logoAk,
     language: 'TypeScript',
     library: 'React',
