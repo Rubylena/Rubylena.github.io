@@ -11,23 +11,18 @@ import logoT40 from '@/images/logos/t40.ico'
 import logoLoad from '@/images/logos/load-logo.svg'
 import logoMovie from '@/images/logos/movie-logo.png'
 import logoFootprint from '@/images/logos/footprint.png'
+import logoKachiside from '@/images/logos/kachiside.ico'
 
 const projects = [
   {
     name: 'Akopesam',
     description:
       'Innovative and reliable financial application for public servants and private organizations.',
-    link: { href: 'https://akopesamcredits.com/', label: 'akopesamcredits.com' },
+    link: {
+      href: 'https://akopesamcredits.com/',
+      label: 'akopesamcredits.com',
+    },
     logo: logoAk,
-    language: 'TypeScript',
-    library: 'React',
-  },
-  {
-    name: 'TrustBanc MFB',
-    description:
-      'Website containing information about TrustBanc MicroFinance services.',
-    link: { href: 'https://trustbancmfb.com/', label: 'trustbancmfb.com' },
-    logo: logoTrust,
     language: 'TypeScript',
     library: 'React',
   },
@@ -44,6 +39,29 @@ const projects = [
     language: 'TypeScript',
     library: 'NextJs',
   },
+  {
+    name: 'Kachiside',
+    description:
+      'Streamline your research, surveys, evaluation, and program accountability.',
+
+    link: {
+      href: 'https://www.kachiside.org/',
+      label: 'kachiside.org',
+    },
+    logo: logoKachiside,
+    language: 'TypeScript',
+    library: 'React',
+  },
+  {
+    name: 'TrustBanc MFB',
+    description:
+      'Website containing information about TrustBanc MicroFinance services.',
+    link: { href: 'https://trustbancmfb.com/', label: 'trustbancmfb.com' },
+    logo: logoTrust,
+    language: 'TypeScript',
+    library: 'React',
+  },
+
   {
     name: 'TrustBanc Capital',
     description:
