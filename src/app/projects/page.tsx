@@ -12,8 +12,20 @@ import logoLoad from '@/images/logos/load-logo.svg'
 import logoMovie from '@/images/logos/movie-logo.png'
 import logoFootprint from '@/images/logos/footprint.png'
 import logoKachiside from '@/images/logos/kachiside.ico'
+import logoLotus from '@/images/logos/Lotus.png'
 
 const projects = [
+  {
+    name: 'LenzByLotus',
+    description: 'Simplified Real Time Finance Tracking Tool.',
+    link: {
+      href: 'https://lenz.lotusbank.com/',
+      label: 'lenz.lotusbank.com',
+    },
+    logo: logoLotus,
+    language: 'TypeScript',
+    library: 'React',
+  },
   {
     name: 'Akopesam',
     description:
