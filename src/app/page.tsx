@@ -239,16 +239,16 @@ function Resume() {
       company: 'Vertex',
       title: 'Frontend Developer',
       logo: logoVertex,
-      start: 'Dec 2021',
+      start: 'Aug 2021',
       end: 'Dec 2022',
     },
-    {
-      company: 'T40',
-      title: 'Frontend Engineer',
-      logo: logoT40,
-      start: 'Nov 2019',
-      end: 'Nov 2021',
-    },
+    // {
+    //   company: 'T40',
+    //   title: 'Frontend Engineer',
+    //   logo: logoT40,
+    //   start: 'Nov 2019',
+    //   end: 'Nov 2021',
+    // },
   ]
 
   return (
