@@ -36,6 +36,17 @@ const projects = [
     language: 'TypeScript',
     library: 'NextJs',
   },
+  {
+    name: 'Cavalry',
+    description: 'AI Community manager website',
+    link: {
+      href: 'https://getcavalry.ai/',
+      label: 'getcavalry.ai',
+    },
+    logo: logoVertex,
+    language: 'TypeScript',
+    library: 'NextJs',
+  },
    {
     name: 'Feedback',
     description: 'A QR code feedback form',
