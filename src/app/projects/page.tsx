@@ -12,6 +12,7 @@ import logoFootprint from '@/images/logos/footprint.png'
 import logoKachiside from '@/images/logos/kachiside.ico'
 import logoLotus from '@/images/logos/Lotus.png'
 import logoVertex from '@/images/logos/Vertex.svg'
+import logoCTC from '@/images/logos/ctc.svg'
 
 const projects = [
   {
@@ -126,6 +127,18 @@ const projects = [
       label: 'footprinthq.com',
     },
     logo: logoFootprint,
+    language: 'TypeScript',
+    library: 'React',
+  },
+  {
+    name: 'CTC',
+    description:
+      'The heart of technology and innovation in Calabar, Nigeria. Join us to learn, build, and grow together.',
+    link: {
+      href: 'https://calabartechcommunity.com/',
+      label: 'calabartechcommunity.com',
+    },
+    logo: logoCTC,
     language: 'TypeScript',
     library: 'React',
   },
