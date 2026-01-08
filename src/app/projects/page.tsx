@@ -8,11 +8,10 @@ import logoTrust from '@/images/logos/favicon.ico'
 import logoIntercity from '@/images/logos/intercity.ico'
 import logoShop from '@/images/logos/shopEasy.png'
 import logoT40 from '@/images/logos/t40.ico'
-import logoLoad from '@/images/logos/load-logo.svg'
-import logoMovie from '@/images/logos/movie-logo.png'
 import logoFootprint from '@/images/logos/footprint.png'
 import logoKachiside from '@/images/logos/kachiside.ico'
 import logoLotus from '@/images/logos/Lotus.png'
+import logoVertex from '@/images/logos/Vertex.svg'
 
 const projects = [
   {
@@ -21,6 +20,28 @@ const projects = [
     link: {
       href: 'https://lenz.lotusbank.com/',
       label: 'lenz.lotusbank.com',
+    },
+    logo: logoLotus,
+    language: 'TypeScript',
+    library: 'React',
+  },
+  {
+    name: 'Fabrik',
+    description: 'Personal Super-Intelligence for AI Apps',
+    link: {
+      href: 'https://getfabrik.ai/',
+      label: 'getfabrik.ai',
+    },
+    logo: logoVertex,
+    language: 'TypeScript',
+    library: 'NextJs',
+  },
+   {
+    name: 'Feedback',
+    description: 'A QR code feedback form',
+    link: {
+      href: 'https://feedback.lotusbank.com/',
+      label: 'feedback.lotusbank.com',
     },
     logo: logoLotus,
     language: 'TypeScript',
@@ -73,7 +94,6 @@ const projects = [
     language: 'TypeScript',
     library: 'React',
   },
-
   {
     name: 'TrustBanc Capital',
     description:
@@ -145,46 +165,7 @@ const projects = [
     logo: logoIntercity,
     language: 'TypeScript',
     library: 'React',
-  },
-  {
-    name: 'Shop Easy',
-    description:
-      'An E-commerce App that directs users to multiple stores where they can find a particular product.',
-
-    link: {
-      href: 'https://shop-easyy.netlify.app/',
-      label: 'shop-easy',
-    },
-    logo: logoShop,
-    language: 'JavaScript',
-    library: 'React',
-  },
-  {
-    name: 'Load Connect',
-    description:
-      'Load connect provides load delivery solutions with affordable web and mobile app platforms.',
-
-    link: {
-      href: 'https://loading-conect.netlify.app/',
-      label: 'loading-connect',
-    },
-    logo: logoLoad,
-    language: 'JavaScript',
-    library: 'React',
-  },
-  {
-    name: 'Movie App',
-    description:
-      'Simple movie application implemented with vanilla JS with minimally HTML.',
-
-    link: {
-      href: 'https://potent-movie-app.netlify.app/',
-      label: 'movie app',
-    },
-    logo: logoMovie,
-    language: 'JavaScript',
-    library: 'React',
-  },
+  }
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
