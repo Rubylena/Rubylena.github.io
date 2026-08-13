@@ -4,9 +4,11 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoAk from '@/images/logos/ak.svg'
+import logoAmiva from '@/images/logos/amiva.svg'
+import logoMust from '@/images/logos/must.png'
+import logoHangukmun from '@/images/logos/hangukmun.png'
 import logoTrust from '@/images/logos/favicon.ico'
 import logoIntercity from '@/images/logos/intercity.ico'
-import logoShop from '@/images/logos/shopEasy.png'
 import logoT40 from '@/images/logos/t40.ico'
 import logoFootprint from '@/images/logos/footprint.png'
 import logoKachiside from '@/images/logos/kachiside.ico'
@@ -14,6 +16,42 @@ import logoLotus from '@/images/logos/Lotus.png'
 import logoVertex from '@/images/logos/Vertex.svg'
 
 const projects = [
+  {
+    name: 'Amiva',
+    description:
+      'AI personal assistant on WhatsApp. A product I’m currently building across frontend, backend and deployment.',
+    link: {
+      href: 'https://amiva.netlify.app/',
+      label: 'amiva',
+    },
+    logo: logoAmiva,
+    language: 'TypeScript & Python',
+    library: 'NextJs & FastAPI',
+  },
+  {
+    name: 'MUST Company',
+    description:
+      'Global engineering company helping enterprises ship software through AI-assisted engineering.',
+    link: {
+      href: 'https://must.company/',
+      label: 'must.company',
+    },
+    logo: logoMust,
+    language: 'TypeScript',
+    library: 'NextJs',
+  },
+  {
+    name: 'Hangukmun',
+    description:
+      'Study-abroad and employment platform for people building a global career in Korea.',
+    link: {
+      href: 'https://hangukmun.com/',
+      label: 'hangukmun.com',
+    },
+    logo: logoHangukmun,
+    language: 'TypeScript',
+    library: 'NextJs',
+  },
   {
     name: 'LenzByLotus',
     description: 'Simplified Real Time Finance Tracking Tool.',
@@ -47,7 +85,7 @@ const projects = [
     language: 'TypeScript',
     library: 'NextJs',
   },
-   {
+  {
     name: 'Feedback',
     description: 'A QR code feedback form',
     link: {
@@ -176,7 +214,7 @@ const projects = [
     logo: logoIntercity,
     language: 'TypeScript',
     library: 'React',
-  }
+  },
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {

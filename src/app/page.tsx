@@ -7,7 +7,6 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
-import logoDev from '@/images/logos/dev.png'
 import logoLotus from '@/images/logos/Lotus.png'
 import logoTrust from '@/images/logos/favicon.ico'
 // import logoT40 from '@/images/logos/t40.ico'
@@ -61,6 +60,29 @@ function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       />
       <path
         d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
+        className="stroke-zinc-400 dark:stroke-zinc-500"
+      />
+    </svg>
+  )
+}
+
+function CodeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+      />
+      <path
+        d="m9.5 10-2.25 2 2.25 2m5-4 2.25 2-2.25 2"
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
@@ -275,6 +297,51 @@ function Resume() {
   )
 }
 
+interface SkillArea {
+  area: string
+  tools: string
+}
+
+function Skills() {
+  let skills: Array<SkillArea> = [
+    {
+      area: 'Frontend',
+      tools:
+        'React, Next.js, TypeScript, Tailwind CSS, Material UI, Redux, TanStack Query',
+    },
+    {
+      area: 'Backend',
+      tools: 'Node.js, .NET / C#, REST APIs, authentication, API integration',
+    },
+    {
+      area: 'Cloud & DevOps',
+      tools:
+        'AWS, Azure DevOps, CI/CD pipelines, IIS deployments, application security',
+    },
+  ]
+
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <CodeIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">What I work with</span>
+      </h2>
+      <ol className="mt-6 space-y-4">
+        {skills.map((skill) => (
+          <li key={skill.area} className="flex flex-col gap-1">
+            <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+              {skill.area}
+            </span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+              {skill.tools}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
+
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
@@ -306,14 +373,16 @@ export default function Home() {
   return (
     <>
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software engineer, co-founder, and mentor.
+            Software engineer building products from frontend to infrastructure.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Grace, a software engineer based in Nigeria. I’m the co-founder
-            of Calabar Tech Community(CTC), where we change the narrative of
-            tech enthusiasts.
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400 max-w-2xl">
+            I’m Grace, a software engineer based in Nigeria. My foundation is
+            frontend, and these days I work across backend, cloud and DevOps. I
+            enjoy building useful products and understanding how systems work
+            end-to-end. I’m also the co-founder of Calabar Tech Community (CTC),
+            where we create opportunities for people in tech.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -337,6 +406,7 @@ export default function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <Skills />
           <Resume />
           <Contact />
         </div>

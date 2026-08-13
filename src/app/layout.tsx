@@ -9,10 +9,11 @@ import '@/styles/prism.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Grace Effiong',
-    default: 'Grace Effiong - Software engineer, co-founder, and mentor',
+    default:
+      'Grace Effiong - Software engineer building products from frontend to infrastructure',
   },
   description:
-    'I’m Grace, a software engineer based in Nigeria. I’m the co-founder of Calabar Tech Community(CTC), where we change the narrative of tech enthusiasts.',
+    'I’m Grace, a software engineer based in Nigeria with a frontend foundation, working across backend, cloud and DevOps. I’m also the co-founder of Calabar Tech Community (CTC), where we create opportunities for people in tech.',
 }
 
 export default function RootLayout({
