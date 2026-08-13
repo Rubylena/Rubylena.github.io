@@ -73,29 +73,34 @@ export default function About() {
             <p>
               I specialize in crafting top-tier web applications. I’m always up
               for a challenge, whether it’s redesigning websites or pioneering
-              new platforms.
+              new platforms. Frontend is where my career began and where I’m
+              strongest, but I got curious about what happens after the code is
+              written, so these days my work also spans backend services, APIs,
+              CI/CD pipelines, deployments and cloud infrastructure.
             </p>
             <p>
               My journey began with a microbiology degree, but fascinating
               detours led me to a fulfilling three-year career in public health.
               Eventually, I smoothly transitioned into a skilled software
-              engineer with four years of practical expertise.
+              engineer with five years of practical expertise.
             </p>
             <p>
               I hold a degree in Software Engineering from ALX, complemented by
               a Masters in Public Health from the University of Calabar. My
               continuous learning journey includes certifications in AWS (Cloud
-              practitioner), CompTIA Security+, and participation in the
-              React learning program by Andela (Meta and PluralSight).
+              Practitioner and Solutions Architect – Associate), CompTIA
+              Security+, and participation in the React learning program by
+              Andela (Meta and PluralSight).
             </p>
             <p>
               Outside of my professional endeavors, I find joy in giving back.
               As a Mentor, I provide valuable career advice, drawing from my
               experiences in navigating the job market and achieving a healthy
               work-life balance. Additionally, as a Co-founder of the Calabar
-              Tech Community, I’m deeply involved in guiding aspiring tech
-              enthusiasts, facilitating workshops, webinars, and hangouts to
-              foster a supportive tech community.
+              Tech Community, now more than 1,000 members strong. I’m deeply
+              involved in guiding aspiring tech enthusiasts, facilitating
+              workshops, webinars, and hangouts to foster a supportive tech
+              community.
             </p>
             <p>
               Curious about the solutions I’ve built? Explore my projects page.
